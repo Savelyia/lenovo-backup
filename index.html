@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Lenovo Backup is a personal tool for read-only Google Drive backups to a privately controlled server.">
+<title>Lenovo Backup — personal Google Drive backups</title>
+<style>
+:root{font-family:system-ui,-apple-system,sans-serif;color:#182c3d;background:#f5f7fa;line-height:1.7}body{margin:0}main{max-width:720px;margin:6vh auto;padding:clamp(24px,5vw,56px);background:#fff;border:1px solid #dce3eb;border-radius:20px}header p{color:#48627b;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase}h1{font-size:clamp(2rem,6vw,3rem);line-height:1.15;letter-spacing:-.04em}h2{margin-top:2rem;font-size:1.25rem}a{color:#174dba;text-underline-offset:3px}footer{margin-top:2.5rem;padding-top:1.2rem;border-top:1px solid #dce3eb;font-size:.9rem;color:#48627b}
+</style>
+<main>
+<header><p>Personal backup utility</p><h1>Lenovo Backup</h1></header>
+<p>Lenovo Backup copies files from its owner's Google Drive to a privately controlled Debian server. It uses rclone and Google's OAuth authorization flow. It is a personal utility, not a public file-sharing service.</p>
+<h2>What the utility does</h2>
+<p>After the owner grants permission, the utility lists and downloads Drive files for local backup. It requests the read-only permission <code>drive.readonly</code>. It does not upload, rename, or delete files in Google Drive.</p>
+<p>Unchanged files are skipped. Updated files replace the current local copy. Files removed from Drive remain in the local backup. Supported native Google documents are exported to ordinary file formats; this does not preserve every Google feature or the document's complete revision history.</p>
+<h2>Private data stays off this website</h2>
+<p>This website only explains the utility. It does not provide a sign-in form, store OAuth credentials, or display backup files. Authorization is completed on Google's own website; backup data is stored separately on the owner's server.</p>
+<h2>Your permissions</h2>
+<p>The owner can revoke the utility's access in <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revocation stops future authorized access but does not automatically remove files already downloaded to the local backup.</p>
+<footer><a href="privacy.html">Privacy policy</a> · Updated 2 November 2026</footer>
+</main>
+</html>
